@@ -4,28 +4,11 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.AppBarOverlay"
-            app:title="Registration Form">
-
-        </android.support.v7.widget.Toolbar>
-    </android.support.design.widget.AppBarLayout>
-
-
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    android:background="@mipmap/cu">
+    android:background="@mipmap/pp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -38,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@mipmap/ic_launcher"
-            android:layout_marginTop="36dp"/>
+            android:layout_marginTop="72dp"/>
 
         <TextView
             android:id="@+id/tv_curiosity"
@@ -50,84 +33,99 @@
 
         <Button
             android:id="@+id/btn_facebook"
-            android:drawableLeft="@mipmap/ic_launcher_mail"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@mipmap/ic_launcher_facebook"
             android:drawablePadding="12dp"
             android:text="@string/facebook"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="72dp"
+            android:layout_marginTop="120dp"
             android:layout_marginLeft="18dp"
             android:layout_marginRight="18dp"
             android:paddingEnd="88dp"
             android:textAllCaps="false"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            android:textColor="@color/whiteFull"
+            android:layout_gravity="center"/>
 
         <Button
             android:id="@+id/btn_google"
-            android:drawableLeft="@mipmap/ic_launcher_mail"
+            android:background="@color/colorAccent"
+            android:drawableLeft="@mipmap/ic_launcher_google"
             android:drawablePadding="12dp"
             android:text="@string/google"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
             android:layout_marginLeft="18dp"
             android:layout_marginRight="18dp"
             android:paddingEnd="108dp"
             android:textAllCaps="false"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            android:textColor="@color/whiteFull"
+            android:layout_gravity="center"/>
 
         <Button
             android:id="@+id/btn_twitter"
-            android:drawableLeft="@mipmap/ic_launcher_mail"
+            android:background="@color/colorPrimaryLight"
+            android:drawableLeft="@mipmap/ic_launcher_twitter"
             android:drawablePadding="12dp"
             android:text="@string/twitter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="18dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
             android:paddingEnd="108dp"
             android:textAllCaps="false"
             android:textSize="18sp"
             android:textColor="@color/whiteFull"
-            android:background="@color/colorPrimary"/>
+            android:layout_gravity="center"/>
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:layout_marginLeft="20dp">
+            android:gravity="center"
+            android:paddingTop="6dp">
 
             <Button
                 android:id="@+id/btn_sign_up"
+                android:background="@color/secondaryText"
                 android:drawableLeft="@mipmap/ic_launcher_mail"
-                android:layout_width="168dp"
+                android:drawablePadding="12dp"
+                android:layout_width="162dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="0dp"
+                android:gravity="center"
                 android:text="@string/signUp"
                 android:textSize="18sp"
-                android:gravity="left"
                 android:textAllCaps="false"
-                android:paddingEnd="18dp"/>
+                android:textColor="@color/whiteFull"
+                android:paddingEnd="18dp" />
 
             <Button
                 android:id="@+id/btn_sign_in"
                 android:drawableLeft="@mipmap/ic_launcher_mail"
-                android:layout_width="168dp"
+                android:drawablePadding="4dp"
+                android:background="@color/secondaryText"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="0dp"
+                android:layout_marginLeft="8dp"
                 android:text="@string/signIn"
                 android:textSize="18sp"
-                android:gravity="left"
                 android:textAllCaps="false"
+                android:textColor="@color/whiteFull"
                 android:paddingEnd="18dp"/>
         </LinearLayout>
 
-        <TextView
-            android:layout_marginTop="22dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Terms and conditions and Privacy Policy"
-            android:layout_gravity="center" />
+            <TextView
+                android:layout_marginVertical="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms and conditions and Privacy Policy"
+                android:textSize="18sp"
+                android:layout_gravity="center" />
 
     </LinearLayout>
 </ScrollView>
